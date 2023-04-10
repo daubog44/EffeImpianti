@@ -1,0 +1,7 @@
+.starsSection {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 5rem);
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow: hidden;
+}
