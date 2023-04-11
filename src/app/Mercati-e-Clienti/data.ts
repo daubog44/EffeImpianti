@@ -21,7 +21,7 @@ const data = [
         ImageUrl: "/images/clienti/SilvanoChiapparoli.jpg",
         content:
           "Installazione e manutenzione di impianti di condizionamento, riscaldamento, antincendio, celle refrigerate, pannelli solari, idrico sanitario.",
-        CaseStudy: "/Case-Study" as const,
+        CaseStudy: "/Case-Study/Silvano-Chiapparoli-Logistica" as const,
       },
       {
         Title: "STM Group S.r.l.",
@@ -53,7 +53,7 @@ const data = [
         ImageUrl: "/images/clienti/McDonalds.jpg",
         content:
           "Installazione e manutenzione di impianti di condizionamento, riscaldamento, celle refrigerate, frigoriferi, idrico sanitario.",
-        CaseStudy: "/Case-Study" as const,
+        CaseStudy: "/Case-Study/Walk-In-a-cold-rooms" as const,
       },
     ],
   },

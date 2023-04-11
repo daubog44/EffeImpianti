@@ -8,7 +8,6 @@ const navigation = [
     href: "/Mercati-e-Clienti" as const,
     current: false,
   },
-  { name: "Case Study" as const, href: "/Case-Study" as const, current: false },
   { name: "Contatti" as const, href: "/Contatti" as const, current: false },
 ];
 

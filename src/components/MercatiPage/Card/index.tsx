@@ -1,4 +1,3 @@
-import { Tlinks } from "@/navigation"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -6,7 +5,7 @@ export interface CardProps {
     Title: string
     ImageUrl: string
     content: string
-    CaseStudy?: Tlinks
+    CaseStudy?: string
 }
 
 const Card = function ({ Title, ImageUrl, content, CaseStudy }: CardProps) {
@@ -29,7 +28,7 @@ const Card = function ({ Title, ImageUrl, content, CaseStudy }: CardProps) {
             </div>
             {CaseStudy &&
                 <Link
-                    className="rounded-full bg-green-100 px-3 py-1.5 text-xs font-medium text-green-600" href={CaseStudy}>
+                    className="rounded-full bg-green-100 px-3 py-1.5 text-xs font-medium text-green-600" href={CaseStudy as __next_route_internal_types__.RouteImpl<URL>}>
                     Case study
                 </Link>
             }

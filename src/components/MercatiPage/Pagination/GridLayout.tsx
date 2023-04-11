@@ -4,7 +4,6 @@ interface GridLayoutProps {
     cardData: CardProps[]
 }
 
-
 const GridLayout = function ({ cardData }: GridLayoutProps) {
     return (
         <>

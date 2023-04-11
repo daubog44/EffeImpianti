@@ -1,3 +1,4 @@
+"use client";
 import { WithIntersectionObserver } from "@/components/HOCs";
 import { Switch } from '@headlessui/react'
 import { classNames } from "../../../utils/utilsFunctions";
@@ -51,7 +52,7 @@ function FormContent() {
 
 
     return (
-        <>
+        <WithIntersectionObserver>
             <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-Arima">Contattaci!</h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
@@ -170,8 +171,8 @@ function FormContent() {
                     >Let's talk</button>
                 </div>
             </form>
-        </>
+        </WithIntersectionObserver>
     )
 }
 
-export default WithIntersectionObserver(FormContent);
+export default FormContent;

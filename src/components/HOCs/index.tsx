@@ -1,2 +1,2 @@
-import { WithIntersectionObserver } from "./WithIntersectionObserver";
+import WithIntersectionObserver from "./WithIntersectionObserver";
 export { WithIntersectionObserver }

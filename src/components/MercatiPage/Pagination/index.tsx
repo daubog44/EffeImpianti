@@ -1,7 +1,7 @@
 import GridLayout from "./GridLayout";
-import data from "./data";
+import type { TData } from "../../../app/Mercati-e-Clienti/data";
 
-const Pagination = function () {
+const Pagination = function ({ data }: { data: TData }) {
     return (<section className="px-5 sm:px-10 min-h-screen py-6">
         {data.map(el => (
             <div key={el.section} className="flex flex-col items-center mb-20">

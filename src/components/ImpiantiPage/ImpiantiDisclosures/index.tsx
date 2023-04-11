@@ -1,9 +1,9 @@
 "use client";
 import { Disclosure, Transition } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/20/solid';
-import data from "./data";
+import type { DataImpianti } from "../../../app/Impianti/data";
 
-export default function ImpiantiDisclosures() {
+export default function ImpiantiDisclosures({ data }: { data: DataImpianti }) {
 
     return (
         <div className="w-full pb-16">

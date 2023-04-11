@@ -1,11 +1,9 @@
 'use client';
 import Link from "next/link"
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
 import useStore from "@/store";
 
 export default function Footer({ gridPosition }: { gridPosition?: string }) {
-    const pathname = usePathname();
     const navigation = useStore((state) => state.navigationData);
 
     return (
@@ -36,7 +34,7 @@ export default function Footer({ gridPosition }: { gridPosition?: string }) {
                                     <Link href="/legal#Terms-&-Conditions" className="font-semibold">Terms & Conditions</Link>
                                 </span>
 
-                                <span className="block text-gray-300">Need help? <Link scroll={true} onClick={() => { if (pathname === "/") { document && document?.querySelector("#contact-us").scrollIntoView(); } }} href={{ pathname: "/", hash: "contact-us" }} className="font-semibold text-white">Contact Us</Link></span>
+                                <span className="block text-gray-300">Need help? <Link scroll={true} href={{ pathname: "/", hash: "contact-us" }} className="font-semibold text-white">Contact Us</Link></span>
                             </div>
                         </div>
                     </div>

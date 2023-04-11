@@ -1,5 +1,5 @@
 import Image from "next/image"
-import DownloadBtn from "../DownloadBtn";
+import { DownloadBtn } from "../../SharedComponents";
 
 const MissionSection = function () {
     return (
@@ -23,10 +23,10 @@ const MissionSection = function () {
                         <h2 className="text-3xl font-bold sm:text-4xl">Il nostro obbiettivo</h2>
 
                         <p className="mt-4 text-gray-600">
-                            L'obiettivo dell'operato dell'azienda monzese è la creazione di un impianto che risponda ai parametri tecnici e normativi indispensabili al suo funzionamento: a questo si aggiunge la cura particolare per assicurare prodotti e servizi altamente qualitativi. La certezza di un impianto personalizzato e caratterizzato da un alto livello di efficienza è certamente il punto di forza dell'azienda, che mette a disposizione delle necessità del cliente la propria professionalità e competenza, nell'attenzione costante a tutti gli aspetti dell'installazione.
+                            L&apos;obiettivo dell&apos;operato dell&apos;azienda monzese è la creazione di un impianto che risponda ai parametri tecnici e normativi indispensabili al suo funzionamento: a questo si aggiunge la cura particolare per assicurare prodotti e servizi altamente qualitativi. La certezza di un impianto personalizzato e caratterizzato da un alto livello di efficienza è certamente il punto di forza dell&apos;azienda, che mette a disposizione delle necessità del cliente la propria professionalità e competenza, nell&apos;attenzione costante a tutti gli aspetti dell&apos;installazione.
                         </p>
 
-                        <DownloadBtn link="/PDFs/EffeImpiantiCompanyProfile2011.pdf" content="Download Company Profile" />
+                        <DownloadBtn link={"/PDFs/EffeImpiantiCompanyProfile2011.pdf" as __next_route_internal_types__.RouteImpl<URL>} content="Download Company Profile" />
                     </div>
                 </div>
             </div>

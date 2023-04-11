@@ -1,5 +1,6 @@
 import { Pagination } from "@/components/MercatiPage";
+import data from "./data";
 
 export default function NotFoundCatchAll() {
-    return <Pagination />
+    return <Pagination data={data} />
 }

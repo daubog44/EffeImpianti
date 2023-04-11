@@ -1,8 +1,7 @@
 import { DesignSVG } from "@/components/SVG";
 import Link from "next/link";
-import useStore from '@/store';
 
-export default function () {
+export default function HeroSection() {
     ;
     return (
         <div className="w-screen h-[calc(100vh-4rem)] text-white" style={{

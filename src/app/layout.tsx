@@ -22,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="it" className={fonts}>
       <body>
-        <Providers children={children} />
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   )

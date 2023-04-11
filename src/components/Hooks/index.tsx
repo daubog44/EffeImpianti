@@ -10,7 +10,7 @@ function useNavigationEvent(func: (page: Tlinks) => void) {
     useEffect(() => {
         const url = pathname as Tlinks;
         func(url);
-    }, [pathname]);
+    }, [pathname, func]);
 }
 
 export { useNavigationEvent }
